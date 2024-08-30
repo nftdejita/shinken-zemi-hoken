@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life Insurance Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>ようこそゼミナール保険です</h1>
+        <p>
+          あなたにピッタリの保険を見つけるために、以下の質問にご回答ください。
+        </p>
+      </header>
+
+      <form id="surveyForm">
+        <div class="question">
+          <h2>あなたの心配事はなんですか?</h2>
+          <label
+            ><input type="checkbox" name="concerns" value="illness" />
+            突然の病気</label
+          >
+          <label
+            ><input type="checkbox" name="concerns" value="accident" />
+            まさかの事故</label
+          >
+          <label
+            ><input type="checkbox" name="concerns" value="job security" />
+            突然の失業</label
+          >
+          <label
+            ><input type="checkbox" name="concerns" value="finances" />
+            将来への備え</label
+          >
+        </div>
+
+        <div class="question">
+          <h2>ご自身やご親族で次のような経験をされた方はいますか？</h2>
+          <label
+            ><input type="radio" name="illnessExperience" value="cancer" />
+            がん</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="illnessExperience"
+              value="heart disease"
+            />
+            心疾患</label
+          >
+          <label
+            ><input type="radio" name="illnessExperience" value="stroke" />
+            脳血管疾患</label
+          >
+          <label
+            ><input type="radio" name="illnessExperience" value="none" />
+            とくになし</label
+          >
+        </div>
+
+        <div class="question">
+          <h2>資料はご希望ですか？</h2>
+          <label
+            ><input type="radio" name="materials" value="email" />
+            電子メール</label
+          >
+          <label
+            ><input type="radio" name="materials" value="paper" /> 郵送
+            (送付先を入力してください)</label
+          >
+          <input
+            type="text"
+            name="address"
+            placeholder="住所を入力してください（オプション）"
+          />
+        </div>
+
+        <div class="question">
+          <h2>ご本人の情報</h2>
+          <input type="text" name="gender" placeholder="性別" />
+          <input type="number" name="age" placeholder="年齢" />
+          <input type="tel" name="phone" placeholder="電話番号" />
+        </div>
+
+        <button type="submit">送信する</button>
+      </form>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
